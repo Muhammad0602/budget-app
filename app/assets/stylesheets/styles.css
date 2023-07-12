@@ -76,6 +76,22 @@ body {
     padding: 0.5rem 0.8rem;
 }
 
+.category-container {
+    display: flex;
+    background-color: white;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.category-container p {
+    margin-left: 2rem;
+    text-decoration: none !important;
+}
+
+.category-container .money {
+    margin-left: auto;
+}
+
 .new-category {
     width: 100%;
     background: #5fb523;

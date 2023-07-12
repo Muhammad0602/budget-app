@@ -1,12 +1,11 @@
-<div id="<%= dom_id category %>">
+<div class="category-container" id="<%= dom_id category %>">
  
+<%= image_tag(image_path(category.icon), class: "icon-image") %>
+
   <p>
-    <strong>Name:</strong>
     <%= category.name %>
   </p>
 
-  <p>Total Amount: $400 </p>
-
-  <%= image_tag(image_path(category.icon), class: "icon-image") %>
+  <p class="money">$400</p>
 
 </div>
