@@ -33,6 +33,7 @@ body {
     padding: 1.3rem;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 #splash .sign-btn {
@@ -61,12 +62,14 @@ body {
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .navbar .next-btn {
     background-color: #3778c2;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .field .text-input {
