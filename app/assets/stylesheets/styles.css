@@ -46,10 +46,7 @@ body {
     height: 60px;
 }
 
-.form {
-}
-
-.form .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 0.9rem 1.5rem;
@@ -71,9 +68,33 @@ body {
     border: none;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.field .text-input {
+.text-input {
     width: 100%;
     padding: 0.5rem 0.8rem;
+}
+
+.new-category {
+    width: 100%;
+    background: #5fb523;
+    margin-top: 34rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-category .category-btn {
+    cursor: pointer;
+    text-decoration: none;
+    background: #5fb523;
+    width: 90%;
+    color: white;
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
 }
