@@ -137,3 +137,13 @@ body {
     width: 100%;
     margin-top: 15.3rem;
 }
+
+.new-expense {
+    width: 10rem;
+}
+
+.expense-btn {
+    width: 100%;
+    margin-top: 23rem;
+    font-size: 1.2rem;
+}

@@ -1,6 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Expenses</h1>
+<nav class='navbar'>
+  <a href="<%= categories_path %>" class="back-btn">&larr;</a>
+  <h3>Transactions</h3>
+  <%= link_to 'Log Out', destroy_user_session_path, 'data-turbo-method': :delete, class: 'next-btn' %>
+</nav>
 
 <div id="expenses">
   <% @expenses.each do |expense| %>
@@ -11,4 +15,6 @@
   <% end %>
 </div>
 
-<%= link_to "New Transaction", new_category_expense_path(@category) %>
+<div class="new-category">
+  <%= link_to "New Transaction", new_category_expense_path(@category), class: 'category-btn' %>
+</div>
