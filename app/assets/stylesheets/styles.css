@@ -81,6 +81,9 @@ body {
     background: #5fb523;
     margin-top: 34rem;
     height: 5.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
