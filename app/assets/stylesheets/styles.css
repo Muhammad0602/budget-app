@@ -43,7 +43,7 @@ body {
 
 .icon-image {
     width: 60px;
-    height: 60px;
+    height: 50px;
 }
 
 .navbar {
@@ -86,7 +86,11 @@ body {
     justify-content: center;
 }
 
-.new-category .category-btn {
+.category-name {
+    margin-bottom: 2rem;
+}
+
+.category-btn {
     cursor: pointer;
     text-decoration: none;
     background: #5fb523;
@@ -97,4 +101,20 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+}
+
+.icons-group {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.form-category {
+    width: 100%;
+    margin-top: 15.3rem;
 }

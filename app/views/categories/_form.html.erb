@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="category-name">
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name, class: 'text-input' %>
   </div>
@@ -21,7 +21,7 @@
   <div class="icons-group">
     <%= form.collection_radio_buttons :icon, [["Food", "food.jpg"], ["Game", "game.png"], ["Teaching", "teach.jpg"], ["Health", "health.jpg"], ["Education", "study.webp"], ["Billing", "b.png"], ["Shopping", "i.webp"], ["Rolling", "4610979.png"], ["Camping", "camping.webp"]], :second, :first do |b| %>
       <%= b.label do %>
-        <%= image_tag(image_path("#{b.value}"), alt: b.text, style: "max-width: 50px; max-height: 50px;") %>
+        <%= image_tag(b.value, alt: b.text, class: "icon-image") %>
         <%= b.radio_button %>
       <% end %>
     <% end %>
@@ -29,6 +29,7 @@
 </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit(class: 'category-btn form-category') %>
   </div>
+  
 <% end %>
