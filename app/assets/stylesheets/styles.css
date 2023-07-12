@@ -5,10 +5,71 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.splash-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-screen h1 {
+    font-size: 3rem;
+    margin-top: 15rem;
+}
+
+#splash {
+    display: flex;
+    flex-direction: column;
+    background: #3778c2;
+    width: 90%;
+    margin-top: 12rem;  
+}
+
+.btn {
+    text-align: center;
+    padding: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+#splash .sign-btn {
+    background-color: #f7f7f7;
+    color: black;
 }
 
 .icon-image {
     width: 100px;
+}
+
+.form {
+}
+
+.form .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 1.5rem;
+    background-color: #3778c2;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.navbar .back-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar .next-btn {
+    background-color: #3778c2;
+    border: none;
+    color: white;
+}
+
+.field .text-input {
+    width: 100%;
+    padding: 0.5rem 0.8rem;
 }
