@@ -7,11 +7,13 @@
 </nav>
 
 <div id="expenses">
+  <p class="total-amount">
+    <strong>Total amount: </strong>
+    $<%= @expenses.sum(:amount) %>
+  </p>
+
   <% @expenses.each do |expense| %>
     <%= render expense %>
-    <p>
-      <%= link_to "Show this expense", category_expense_path(@category, expense) %>
-    </p>
   <% end %>
 </div>
 

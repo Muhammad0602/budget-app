@@ -153,4 +153,11 @@ body {
     background: white;
     padding: 1.5rem;
     justify-content: space-between;
+    margin: 0.8rem;
+}
+
+.total-amount {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
