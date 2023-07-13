@@ -6,6 +6,5 @@
     <%= category.name %>
   </p>
 
-  <p class="money">@total_amount</p>
-
+  <p class="money">$<%=category.expenses.sum(:amount) || 0 %></p>
 </div>
