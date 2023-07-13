@@ -22,7 +22,7 @@ RSpec.describe 'Transactions integration tests', type: :feature do
     end
 
     it 'should display a button to create the expense' do
-        expect(page).to have_button('CREATE TRANSACTION')
+      expect(page).to have_button('CREATE TRANSACTION')
     end
   end
 end

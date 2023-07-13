@@ -9,8 +9,7 @@ class ExpensesController < ApplicationController
   end
 
   # GET /categories/:category_id/expenses/:id
-  def show
-  end
+  def show; end
 
   # GET /categories/:category_id/expenses/new
   def new
@@ -18,16 +17,15 @@ class ExpensesController < ApplicationController
   end
 
   # GET /categories/:category_id/expenses/:id/edit
-  def edit
-  end
+  def edit; end
 
   # POST /categories/:category_id/expenses
   def create
     @expense = Expense.new(author_id: current_user.id, **expense_params)
-    
+
     if @expense.save
       @category.expenses << @expense
-      redirect_to category_expenses_url(@category, @expense), notice: "Expense was successfully created."
+      redirect_to category_expenses_url(@category, @expense), notice: 'Expense was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
@@ -36,7 +34,7 @@ class ExpensesController < ApplicationController
   # PATCH/PUT /categories/:category_id/expenses/:id
   def update
     if @expense.update(expense_params)
-      redirect_to category_expense_url(@category, @expense), notice: "Expense was successfully updated."
+      redirect_to category_expense_url(@category, @expense), notice: 'Expense was successfully updated.'
     else
       render :edit, status: :unprocessable_entity
     end
@@ -45,7 +43,7 @@ class ExpensesController < ApplicationController
   # DELETE /categories/:category_id/expenses/:id
   def destroy
     @expense.destroy
-    redirect_to category_expenses_url, notice: "Expense was successfully destroyed."
+    redirect_to category_expenses_url, notice: 'Expense was successfully destroyed.'
   end
 
   private
