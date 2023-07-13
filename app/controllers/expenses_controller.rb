@@ -5,7 +5,7 @@ class ExpensesController < ApplicationController
 
   # GET /categories/:category_id/expenses
   def index
-    @expenses = @category.expenses
+    @expenses = @category.expenses.order(created_at: :desc)
   end
 
   # GET /categories/:category_id/expenses/:id
