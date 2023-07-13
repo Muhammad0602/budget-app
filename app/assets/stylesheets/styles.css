@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-screen h1 {
+  font-size: 3rem;
+  margin-top: 15rem;
+}
+
+#splash {
+  display: flex;
+  flex-direction: column;
+  background: #3778c2;
+  width: 90%;
+  margin-top: 12rem;
+}
+
+.btn {
+  text-align: center;
+  padding: 1.3rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+#splash .sign-btn {
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.icon-image {
+  width: 60px;
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  background-color: #3778c2;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.navbar .back-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navbar .next-btn {
+  background-color: #3778c2;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+}
+
+.category-container {
+  display: flex;
+  background-color: white;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.category-container p {
+  margin-left: 2rem;
+  text-decoration: none !important;
+}
+
+.category-container .money {
+  margin-left: auto;
+}
+
+.new-category {
+  width: 100%;
+  background: #5fb523;
+  margin-top: 34rem;
+  height: 5.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-name {
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  cursor: pointer;
+  text-decoration: none;
+  background: #5fb523;
+  width: 90%;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.icons-group {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-category {
+  width: 100%;
+  margin-top: 15.3rem;
+}
+
+.new-expense {
+  width: 10rem;
+}
+
+.expense-btn {
+  width: 100%;
+  margin-top: 23rem;
+  font-size: 1.2rem;
+}
+
+.expense-container {
+  display: flex;
+  background: white;
+  padding: 1.5rem;
+  justify-content: space-between;
+  margin: 0.8rem;
+}
+
+.total-amount {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}

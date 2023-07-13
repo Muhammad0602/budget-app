@@ -1,0 +1,10 @@
+<div class="category-container" id="<%= dom_id category %>">
+ 
+<%= image_tag(image_path(category.icon), class: "icon-image") %>
+
+  <p>
+    <%= category.name %>
+  </p>
+
+  <p class="money">$<%=category.expenses.sum(:amount) %></p>
+</div>
