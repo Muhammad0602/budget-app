@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
   # GET /categories or /categories.json
   def index
     @categories = Category.where(author_id: current_user.id).order(created_at: :desc)
+    @total_amount = @category.expenses.sum(:amount)
   end
 
   # GET /categories/1 or /categories/1.json
