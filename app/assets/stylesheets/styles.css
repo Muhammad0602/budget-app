@@ -147,3 +147,10 @@ body {
     margin-top: 23rem;
     font-size: 1.2rem;
 }
+
+.expense-container {
+    display: flex;
+    background: white;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
