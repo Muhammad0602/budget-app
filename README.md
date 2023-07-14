@@ -30,6 +30,9 @@
 
 **Budget App** The budget app is a user-friendly web application that helps users track their expenses and manage their budget effectively. Users can create categories and add individual expenses, with the app providing a clear overview of total spending in each category. The app also includes user authentication for secure access to personal expense data.
 
+## Deployed in [render](https://render.com/)
+[click here](https://budget-app-40hh.onrender.com/) to access the app live
+
 ## Video Presentation of the app
 [Click here](https://www.loom.com/share/fc87aa12c3ce4f38aef88b055d650e43?sid=4134bc9e-956c-494e-be5f-4cd447b2003d)
 
